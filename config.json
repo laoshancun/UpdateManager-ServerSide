@@ -1,0 +1,24 @@
+{
+    "port":80,
+    "rsyncPwdFile":"/data/rsync/rsync.passwd",
+    "defaultMountPoint":"/data/rsync/server/",
+    "sourcePath":"/data/rsync/source/",
+    "nfsUser":"rsync",
+    "nfsPassword":"20040928",
+    "ngxStatusPath":"/upstream_status/?format=json",
+    "ngxStatusPort":8080,
+    "servers":{
+                "tengine":{
+                    "www.66law.cn":[
+                            "192.168.15.50",
+                            "192.168.15.51"
+                        ]
+                }
+        },
+    "rshFile":"/data/www/rsh.exp",
+    "serverkey":"20040928",
+    "upstreamconf":"/data/www/{0}.conf",
+    "upstreamtemplate":"/data/www/upstream.tpl",
+    "uploadTempPath":"/data/tmp",
+    "crondFile":"/data/cron.json"
+}
