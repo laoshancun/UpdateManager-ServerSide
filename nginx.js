@@ -14,12 +14,15 @@ nginx.reloadService = function (serverip) {
     return util.Promise
         .all([
             util.C('rshFile'),
+            util.C('serverid'),
             util.C('serverkey')
         ])
-        .spread(function (rshFile, serverkey) {
+        .spread(function (rshFile,serverid, serverkey) {
             var cmd = [
                 '/usr/bin/expect ',
                 rshFile,
+                ' ',
+                serverid,
                 ' ',
                 serverkey,
                 ' ',

@@ -16,6 +16,7 @@
                 }
         },
     "rshFile":"/data/www/rsh.exp",
+	"serverid":"root",
     "serverkey":"yourpassword",
     "upstreamconf":"/data/www/{0}.conf",
     "upstreamtemplate":"/data/www/upstream.tpl",
